@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<style>
+		*{
+			margin:0;
+			padding: 0;
+		}
+		.box {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+
+
+			width: 100px;
+			height: 100px;
+			background: hotpink;
+
+
+			-webkit-transition:all 1s linear 0s;
+			transition: all 1s linear 0s;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	<script>
+		var oBox=document.querySelector('.box');
+		oBox.addEventListener('click',function(){
+			this.style.webkitTransform="rotate(360deg)";
+		},false);
+	</script>
+</body>
+</html>
